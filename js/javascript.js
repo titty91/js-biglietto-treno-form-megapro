@@ -16,11 +16,11 @@ var costoTotale = 0;generaBtn.addEventListener('click', function(){
      if (eta == 1 ){
       // console.log('minorenne', eta);
       var sconto = costoTotale * 0.2;
-      costoTotale = costoTotale - sconto;
+      costoTotale = costoTotale - sconto +'€';
     } else if (eta == 3){
       // console.log('over65', eta);
       var sconto = costoTotale * 0.4;
-      costoTotale = costoTotale - sconto;
+      costoTotale = costoTotale - sconto +'€';
     }
     document.getElementById('costo-totale').innerHTML = costoTotale;
     var cp = Math.floor(Math.random() * (100000-90000)) + 90000;
