@@ -2,9 +2,70 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>js biglietto-treno megapro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <h2>Calcola il prezzo del tuo biglietto</h2>
+          <div class="box">
+            <div class="input">
+              <div class="">
+                <label for="name">Nome e Cognome</label>
+                <input id="name" type="text" name="name" value="">
+              </div>
+              <div class="">
+                <label for="distance">Km da percorrere</label>
+                <input id="distance" type="number" name="distance" value="">
+              </div>
+              <div class="">
+                <label for="eta">Fascia d'età</label>
+                <select id="eta" class="" name="eta">
+                    <option selected value="">seleziona un'opzione</option>
+                    <option value="1">minorenne</option>
+                    <option value="2">maggiorenne</option>
+                    <option value="3">over 65</option>
+                </select>            </div>
+            </div>
+            <div class="actions">
+              <input id="genera" type="button"  value="Genera">
+              <input id="annulla" type="button"  value="Annulla">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2>Il tuo biglietto</h2>
+          <div>
+            <p>dettaglio passeggeri</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome Passeggero</th>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Codice CP</th>
+                  <th>Costo Biglietto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="nomePass">Pippo</td>
+                  <td id="sconto">Sonto minorenni</td>
+                  <td id="carozza">7</td>
+                  <td id="codCp">95890</td>
+                  <td id="costo-totale">3.5euro</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
+    </div>
+    <script src="js/javascript.js"></script>
   </body>
 </html>
